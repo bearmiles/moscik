@@ -175,9 +175,10 @@ namespace WinFormsApp1
                     textBox7.Text = array[5];
                     textBox8.Text = array[6];
                     pictureBox1.Image = Image.FromFile(array[7]);
-                }else
+                }
+                else
                 {
-                    for (int i = 0; i < array.Length; i+=7)
+                    for (int i = 0; i < array.Length; i += 7)
                     {
                         textBox1.Text = array[i];
                         textBox2.Text = array[i + 1];
@@ -188,10 +189,9 @@ namespace WinFormsApp1
                         textBox7.Text = array[i + 5];
                         textBox8.Text = array[i + 6];
                         pictureBox1.Image = Image.FromFile(array[i + 7]);
-
                     }
                 }
-                
+
             }
         }
 
@@ -207,5 +207,37 @@ namespace WinFormsApp1
             textBox8.Text = "";
             pictureBox1.Image = null;
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+
+    class Osoba
+    {
+        public string imie;
+        public string nazwisko;
+        public string email;
+        public int dzienUrodzenia;
+        public int miesiacUrodzenia;
+        public int RokUrodzenia;
+        public string haslo;
+        public string pathName;
+
+        public Osoba(string i, string n, string e, int dz, int mies, int rok, string h, string pN)
+        {
+            this.imie = i;
+            this.nazwisko = n;
+            this.email = e;
+            this.dzienUrodzenia = dz;
+            this.miesiacUrodzenia= mies;
+            this.RokUrodzenia = rok;
+            this.haslo = h;
+            this.pathName = pN;
+        }
+
+        
     }
 }

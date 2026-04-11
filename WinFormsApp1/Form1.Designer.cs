@@ -243,6 +243,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(322, 23);
             textBox2.TabIndex = 9;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
@@ -399,14 +400,14 @@
             // zapiszToolStripMenuItem1
             // 
             zapiszToolStripMenuItem1.Name = "zapiszToolStripMenuItem1";
-            zapiszToolStripMenuItem1.Size = new Size(180, 22);
+            zapiszToolStripMenuItem1.Size = new Size(110, 22);
             zapiszToolStripMenuItem1.Text = "&Zapisz";
             zapiszToolStripMenuItem1.Click += zapiszToolStripMenuItem1_Click;
             // 
             // otworzToolStripMenuItem
             // 
             otworzToolStripMenuItem.Name = "otworzToolStripMenuItem";
-            otworzToolStripMenuItem.Size = new Size(180, 22);
+            otworzToolStripMenuItem.Size = new Size(110, 22);
             otworzToolStripMenuItem.Text = "&otworz";
             otworzToolStripMenuItem.Click += otworzToolStripMenuItem_Click;
             // 
